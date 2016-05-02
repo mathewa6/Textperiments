@@ -37,6 +37,15 @@
         timer = nil;
         return;
     }
+//    CAKeyframeAnimation *scaleAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+//    NSArray *scaleValues                = [NSArray arrayWithObjects:
+//                                           [NSValue valueWithCATransform3D:CATransform3DScale(self.label.layer.transform, 1, 1, 1)],
+//                                           [NSValue valueWithCATransform3D:CATransform3DScale(self.label.layer.transform, 1.1, 1.1, 1)],
+//                                           [NSValue valueWithCATransform3D:CATransform3DScale(self.label.layer.transform, 1, 1, 1)], nil];
+//    [scaleAnimation setValues:scaleValues];
+//    scaleAnimation.fillMode             = kCAFillModeForwards;
+//    scaleAnimation.removedOnCompletion  = NO;
+//    [self.label.layer addAnimation:scaleAnimation forKey:@"scale"];
     self.label.text = [text substringToIndex:pos++];
 }
 
